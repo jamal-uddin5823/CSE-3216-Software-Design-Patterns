@@ -1,17 +1,17 @@
-package org.example.observer.after;
+package org.example.observer;
 
-public class WeatherSite implements IObserver,IDisplay{
+public class WeatherApp implements IObserver, IDisplay{
     WeatherStation weatherStation;
     int temperature;
 
-    public WeatherSite(WeatherStation weatherStation) {
+    public WeatherApp(WeatherStation weatherStation) {
         this.weatherStation = weatherStation;
         this.weatherStation.registerObserver(this);
     }
 
     @Override
     public void display() {
-        System.out.println("Site showing temperature: " + temperature);
+        System.out.println("App showing temperature: " + temperature);
     }
 
     @Override

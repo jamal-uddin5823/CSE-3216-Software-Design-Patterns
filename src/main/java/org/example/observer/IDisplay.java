@@ -1,4 +1,4 @@
-package org.example.observer.after;
+package org.example.observer;
 
 public interface IDisplay {
     public void display();
